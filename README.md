@@ -1,7 +1,12 @@
 # C2H-data
-We have released our C2H-data and Synthetic-data proposed in paper 'Reconstruction of Hyperspectral Data from RGB Images with Prior Category Information'. The 30-channel hyperspectral image data (HSI) is saved as .tiff file, we have provided its corresponding RGB data and given carefully labeled object bounding boxes.  
+We have released our C2H-data and Synthetic-data proposed in paper 'Reconstruction of Hyperspectral Data from RGB Images with Prior Category Information'. 
+
+The 30-channel hyperspectral image data (HSI) is saved as .tiff file, we have provided its corresponding RGB data and given carefully labeled object bounding boxes.  
 [Google Drive](https://drive.google.com/file/d/1MlOCe8Ocql5p2OZKQyIuqWLtDXi9iiwW/view?usp=sharing)  
-[BaiDu Drive](https://pan.baidu.com/s/1Ma09OEqYYzNGgDjAdFk6hg) 提取码: cy5p  
+[BaiDu Drive](https://pan.baidu.com/s/1Ma09OEqYYzNGgDjAdFk6hg) password: cy5p  
+
+The 128-channel raw hyperspectral image data can be obtained from：  
+[BaiDu Drive](https://pan.baidu.com/s/1HZc7-5bfplHvJCS6OlC8Ng) password: vriu 
 
 If you use these datasets in your researches or works, please cite our paper as follow:  
 ```
