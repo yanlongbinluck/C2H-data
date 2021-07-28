@@ -8,6 +8,24 @@ The 30-channel hyperspectral image data (HSI) is saved as .tiff file, we have pr
 The 128-channel raw hyperspectral image data can be obtained from：  
 [BaiDu Drive](https://pan.baidu.com/s/1HZc7-5bfplHvJCS6OlC8Ng) password: vriu 
 
+.tiff image data can be read as follow python script:
+```
+import numpy as np
+from libtiff import TIFF
+def tiff_to_numpy(tiff_image_name): 
+    tif = TIFF.open(tiff_image_name, mode = "r")
+    idx = 0
+    for im in list(tif.iter_images()):
+        im=np.expand_dims(im,axis=2)
+        if idx==0:
+            image=im
+        else:
+            image=np.concatenate((image,im),axis=2)       
+        idx = idx + 1
+    return image
+
+```
+
 If you use these datasets in your researches or works, please cite our paper as follow:  
 ```
 @article{yan2020reconstruction,  
